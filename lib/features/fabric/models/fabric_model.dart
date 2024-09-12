@@ -8,7 +8,7 @@ class FabricItem {
   final String supplier;
   final DateTime? delDt;
   final int bookUnitDeptNo;
-  final int status;
+  int status;
   final String payMode;
   final double? currencyRate;
   final String paymentTermNo;
@@ -51,7 +51,6 @@ class FabricItem {
     required this.itemType,
   });
 
-
   factory FabricItem.fromJson(Map<String, dynamic> json) {
     return FabricItem(
       pid: json['pid'],
@@ -80,7 +79,6 @@ class FabricItem {
       itemType: json['item_type'],
     );
   }
-
 
   Map<String, dynamic> toJson() {
     return {

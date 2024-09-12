@@ -1,3 +1,4 @@
+import 'package:complain_management/features/fabric/fabric_page.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../complain form/complain_form.dart';
@@ -93,7 +94,12 @@ class HomePage extends StatelessWidget {
                     title: 'Others',
                     icon: Icons.factory,
                     onTap: () {
-                      // Handle others tap
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => FabricPage(),
+                        ),
+                      );
                     },
                   ),
                 ],

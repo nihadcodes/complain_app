@@ -496,6 +496,7 @@ class _MultiInputFormState extends State<MultiInputForm> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -503,6 +504,11 @@ class _MultiInputFormState extends State<MultiInputForm> {
           ],
         ),
         backgroundColor: Colors.blueAccent,
+        // leading: IconButton(
+        //   icon: Icon(Icons.arrow_back),
+        //   onPressed: () {
+        //     Navigator.of(context).pop();
+        //   },),
         centerTitle: true,
         actions: [
           Padding(
@@ -522,6 +528,9 @@ class _MultiInputFormState extends State<MultiInputForm> {
           ),
         ],
       ),
+
+
+
 
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
